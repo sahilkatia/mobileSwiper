@@ -1,0 +1,47 @@
+.horizontal-container{
+    overflow: hidden;
+    margin:100px;
+}
+.box-container {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.action-container, .content-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    min-height: 0;
+}
+.swiper-slide {
+    overflow: hidden;
+    background-color: #eee;
+    height:400px;
+}
+.swiper-slide-active {
+    color: #fff;
+    background-color: #aaa;
+    height:400px;
+}
+swiper > .swiper.s-wrapper .swiper-wrapper .swiper-slide {
+    overflow: hidden !important;
+    background-color:white;
+}
+@media only screen and (max-width: 768px) {
+    .horizontal-container{
+        margin:0px;
+        width: 100vw;
+        background-color: black;
+   }
+    .action-container, .content-container {
+        height: 60vh;
+        width: 100vw;
+   }
+    .swiper-slide {
+        height:60vh;
+        width: 100vw;
+   }
+    .swiper-slide-active {
+        height:60vh;
+        width: 100vw;
+   }
+}
